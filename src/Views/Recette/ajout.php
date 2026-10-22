@@ -1,5 +1,5 @@
 <h1>Ajouter une recette</h1>
-<form action="?c=Recette&a=enregistrer" method="post">
+<form action="?c=Recette&a=enregistrer" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="titre" class="form-label">Titre de la recette</label>
         <input type="text" class="form-control" id="titre" name="titre" required>
@@ -13,6 +13,11 @@
         <input type="email" class="form-control" id="auteur" name="auteur" required>
     </div>
     <div class="mb-3">
+        <label for="image" class="form-label">Image de la recette</label>
+        <input type="file" class="form-control" name="image" id="image" required>
+    </div>
+    <div class="mb-3">
         <button type="submit" class="btn btn-primary" id="Enregistrer">Enregistrer</button>
     </div>
+    
 </form>
